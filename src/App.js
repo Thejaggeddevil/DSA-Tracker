@@ -7,7 +7,7 @@ function App() {
   const [view, setView] = useState("home");
   const [score, setScore] = useState(Number(localStorage.getItem("score")) || 0);
   const [streak, setStreak] = useState(Number(localStorage.getItem("streak")) || 0);
-  const [lastVisit, setLastVisit] = useState(localStorage.getItem("lastVisit"));
+ const [lastVisit] = useState(localStorage.getItem("lastVisit"));
   const [history, setHistory] = useState(
     JSON.parse(localStorage.getItem("history") || "[]")
   );
